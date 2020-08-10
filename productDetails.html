@@ -6,13 +6,15 @@
     <title>Incatex | Detalle del producto</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <div style="height: 390px;" class="headerBackground">
+    <div class="headerBackground pageDetails">
       <div class="wrapper">
         <header class="incatexHeader">
           <figure class="incatexHeader__imageContainer">
@@ -34,23 +36,28 @@
         <h1 class="productDetails__title">Detalle del producto</h1>
         <div class="wrapperDetailsProduct">
           <div class="productImagesPreviews">
-            <img class="productImagesPreviews__img" src="images/orangeBlack-big.jpg" alt="Preview">
+            <a href="#">
+              <img class="productImagesPreviews__img" src="images/orangeBlack-big.jpg" alt="Preview">
+            </a>
             <div class="previewsProductCarousel">
-              <figure><img src="images/preview1.jpg" alt="preview1"></figure>
-              <figure><img src="images/preview2.jpg" alt="preview2"></figure>
-              <figure><img src="images/preview1.jpg" alt="preview3"></figure>
+              <figure><a href="#"><img src="images/preview1.jpg" alt="preview1"></a></figure>
+              <figure><a href="#"><img src="images/preview2.jpg" alt="preview2"></a></figure>
+              <figure><a href="#"><img src="images/preview1.jpg" alt="preview3"></a></figure>
             </div>
           </div>
           <div class="productDetailsInfo">
             <h2 class="productDetailsInfo__title">Orange Black</h2>
             <p class="productDetailsInfo__description">Enim nec dui nunc mattis. Nisl pretium fusce id velit ut. Ut tortor pretium viverra suspendisse potenti nullam. Eu scelerisque felis imperdiet proin fermentum leo vel orci. Auctor augue mauris augue neque gravida. Eget aliquet nibh praesent tristique magna sit amet. Interdum velit laoreet id donec ultrices tincidunt arcu non. Ultricies integer quis auctor elit sed. Vulputate ut pharetra sit amet ali</p>
-            <h3>Talla</h3>
-            <small>S-M-L-XL</small>
-            <h3>Modelo</h3>
-            <small>Orange Black - MU2</small>
-            <h3>Precio</h3>
-            <span class="priceProductDetails">S/.50</span>
-            <a class="productDetailsInfo__btn" href="#">Procesar compra</a>
+            <form class="productDetailsInfoWallet" action="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9NQ32BJAT8HHU" method="POST" target="_blank">
+              <label for="name">Nombres</label>
+              <input type="text" id="name" name="first_name" />
+              <label for="email">Correo electronico</label>
+              <input type="email" id="email" name="email" name="email" />
+              <label for="phone">Telefono</label>
+              <input type="tel" id="phone" name="night_phone_a" />
+              <span class="priceProductDetails">S/.50</span>
+              <input type="submit" name="submit" class="productDetailsInfo__btn" value="Confirmar pago" />
+            </form>
           </div>
         </div>
       </div>
@@ -167,7 +174,7 @@
               <nav class="footerDetailsContact__menu">
                 <ul>
                   <li><a href="#">320 623 343 / 933 581 593</a></li>
-                  <li><a href="#">Jr Rio Moquegua 136 - San Luis</a></li>
+                  <li><a href="#"><address>Jr Rio Moquegua 136 - San Luis</address></a></li>
                 </ul>
               </nav>
             </article>
