@@ -88,6 +88,9 @@ p {
 /* HERO */
 .hero {
   padding: 2em;
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  transition: 2s;
 }
 
 .hero__title {
@@ -120,6 +123,9 @@ p {
   bottom: -400px;
   right: 0;
   box-shadow: 0px 4px 4px rgba(195, 195, 195, 0.25);
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  transition: 2s;
 }
 
 .cardNewsProducts__title {
@@ -137,6 +143,7 @@ p {
 .cardProductDetails {
   margin-left: 1em;
   position: relative;
+  width: 250px;
 }
 
 .productDetailsInfoWallet label, .productDetailsInfoWallet input {
@@ -205,6 +212,22 @@ p {
 
 .lastSell {
   margin: 10em 0 4em 0;
+}
+
+.lastSellCard__imageContainer {
+  overflow: hidden;
+}
+
+.lastSellCard__imageContainer img {
+  display: block;
+  transform: scale(1);
+  transition: .4s;
+  z-index: 20;
+}
+
+.lastSellCard__imageContainer img:hover {
+  transform: scale(1.1);
+  transition: .4s;
 }
 
 .lastSell__title {
@@ -307,7 +330,7 @@ p {
 }
 
 .categoryCardProduct__description {
-  font-weight: normal;
+  font-weight: lighter;
   margin: 1em 0 2em 0;
   font-size: 14px;
 }
@@ -316,10 +339,14 @@ p {
   display: flex;
   flex-direction: column;
   text-align: right;
-  width: 350px;
+}
+
+.categoryCardProduct__details.left {
+  margin-left: 6em;
 }
 
 .categoryCardProduct__details.right {
+  margin-right: 6em;
   text-align: left;
 }
 
@@ -342,6 +369,22 @@ p {
   color: #000;
   font-weight: bold;
   transition: .4s ease-in;
+}
+
+.cardProduct__imageContainer {
+  overflow: hidden;
+  width: 220px;
+}
+
+.cardProduct__image {
+  transition: .4s;
+  transform: scale(1);
+  display: block;
+}
+
+.cardProduct__image:hover {
+  transform: scale(1.1);
+  transition: .4s;
 }
 
 .categoryCardProduct__imageContainer {
@@ -432,6 +475,10 @@ p {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 6em;
+}
+
+.testimonialsDetails {
+  margin-top: 12px;
 }
 
 .testimonialsDetails__title {

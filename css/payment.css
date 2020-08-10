@@ -1,0 +1,62 @@
+body {
+  background-color: var(--colorBlack);
+  height: 100vh;
+  margin: 0;
+}
+
+.payment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  position: relative;
+}
+
+.paymentLogoIncatex {
+  position: absolute;
+  bottom: 48px;
+}
+
+.paymentSuccess, .paymentFail {
+  text-align: center;
+  color: var(--colorWhite);
+}
+
+.paymentSuccess__message, .paymentFail__message {
+  margin-top: 1.5em;
+  margin-bottom: 2em;
+  font-size: 14px;
+}
+
+.paymentSuccess__title, .paymentFail__title {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 1em;
+  font-size: 28px;
+}
+
+.paymentSuccess__btn {
+  background-color: #90D256;
+  text-decoration: none;
+  color: var(--colorWhite);
+  width: 100%;
+  text-transform: uppercase;
+  display: block;
+  padding: 0 2em;
+  font-weight: bold;
+  line-height: 2.5;
+  border-radius: 6px;
+}
+
+.paymentFail__btn {
+  background-color: #BC183E;
+  text-decoration: none;
+  color: var(--colorWhite);
+  width: 100%;
+  text-transform: uppercase;
+  display: block;
+  padding: 0 2em;
+  font-weight: bold;
+  line-height: 2.5;
+  border-radius: 6px;
+}
