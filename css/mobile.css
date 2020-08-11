@@ -71,6 +71,9 @@
   .suscribeForm {
     margin: 0 auto;
   }
+  .testimonialsCard {
+    margin-right: 0;
+  }
   .listTestimonialsCards {
     justify-content: center;
   }
@@ -180,5 +183,25 @@
   }
   .suscribeForm {
     width: 100%;
+  }
+  .categoryCardProduct__imageContainer.left {
+    position: initial;
+    margin: 0 auto;
+    margin-bottom: 2em;
+  }
+  .categoryCardProduct__imageContainer.right {
+    position: initial;
+    margin: 0 auto;
+  }
+  .categoryCardProduct__details.left {
+    margin-left: 0;
+  }
+  .categoryCardProduct__details.right {
+    margin-right: 0;
+    margin-bottom: 2em;
+    text-align: center;
+  }
+  .categoryCardProduct__details {
+    text-align: center;
   }
 }
